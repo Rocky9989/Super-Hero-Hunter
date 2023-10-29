@@ -1,0 +1,284 @@
+/* Set default styles for all elements */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Set the font family and background color for the body */
+body {
+  font-family: "Courier New", Courier, monospace;
+  background-color: #f8f9fa;
+}
+
+/* Set the styles for the header */
+header {
+  background-color: #dc3545;
+  color: #f8f9fa;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Set the styles for the h1 element */
+h1 {
+  margin: 0;
+}
+
+/* Set the styles for the form element */
+form {
+  display: flex;
+  align-items: center;
+}
+
+/* Set the styles for the input[type="text"] element */
+input[type="text"] {
+  padding: 0.6rem;
+  border: none;
+  border-radius: 0.25rem;
+  margin-right: 1rem;
+  outline: none;
+  color: #595c5f;
+  background-color: #f8f9fa;
+  width: 15.625rem;
+}
+
+/* Set the styles for the input[type="text"] element when it is focused */
+input:focus {
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Set the styles for the button[type="submit"] element */
+button[type="submit"] {
+  padding: 0.6rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #0d6efd;
+  margin-right: 1rem;
+  width: 6.25rem;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Set the styles for the button[type="submit"] element when it is hovered */
+button[type="submit"]:hover {
+  background-color: #198754;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Set the styles for the button element when it is active */
+button:active {
+  transform: translate(-2px, 2px);
+}
+
+/* Set the styles for the main element */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+/* Set the styles for the search results list */
+#search-results {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #dee2e6;
+}
+
+/* Set the styles for the search results list items */
+#search-results li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.6rem;
+  padding: 0.6rem;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+/* Set the styles for the search results list items when they are hovered */
+#search-results li:hover {
+  background-color: #909294;
+  color: #f8f9fa;
+}
+
+/* Set the styles for the search results list item images */
+#search-results img {
+  width: 55px;
+  height: 55px;
+  margin-right: 0.6rem;
+}
+
+/* Set the styles for the superhero details section */
+#superhero-details {
+  display: none;
+  width: 100%;
+}
+
+/* Set the styles for the superhero details section heading */
+#superhero-details h2 {
+  margin-top: 0;
+  font-size: 2.6rem;
+  color: #595c5f;
+  text-align: center;
+}
+
+/* Set the styles for the superhero details section image */
+#superhero-details img {
+  display: block;
+  margin: 1rem auto;
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+
+/* Set the styles for the super-flex container */
+.super-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+  justify-content: space-between;
+  margin-top: 2rem;
+  color: #595c5f;
+}
+
+/* Set the styles for the flex container */
+.flex {
+  flex-basis: 350px;
+}
+
+/* Set the styles for the flex container heading */
+.flex h3 {
+  font-size: 1.8rem;
+  padding: 0.6rem;
+}
+
+/* Set the styles for the unordered list */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0.6rem;
+}
+
+/* Set the styles for the list items */
+li {
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+  padding: 0.2rem;
+}
+
+/* Set the styles for mobile devices */
+@media only screen and (max-width: 600px) {
+  /* Set the styles for the header */
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+  }
+
+  /* Set the styles for the form */
+  form {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+
+  /* Set the styles for the input[type="text"] element */
+  input[type="text"] {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Set the styles for the button[type="submit"] element */
+  button[type="submit"] {
+    margin-top: 0.5rem;
+  }
+
+  /* Set the styles for the main element */
+  main {
+    padding: 0.5rem;
+  }
+
+  /* Set the styles for the search results list items */
+  #search-results li {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  /* Set the styles for the search results list item images */
+  #search-results img {
+    margin-right: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  /* Set the styles for the super-flex container */
+  .super-flex {
+    margin-top: 1rem;
+  }
+
+  /* Set the styles for the flex container */
+  .flex {
+    flex-basis: 100%;
+    margin-bottom: 1rem;
+  }
+}
+
+/* Set the styles for tablet devices */
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  /* Set the styles for the header */
+  header {
+    padding: 0.8rem;
+  }
+
+  /* Set the styles for the form */
+  form {
+    margin-top: 0.8rem;
+  }
+
+  /* Set the styles for the input[type="text"] element */
+  input[type="text"] {
+    margin-right: 0.8rem;
+  }
+
+  /* Set the styles for the button[type="submit"] element */
+  button[type="submit"] {
+    margin-top: 0;
+  }
+
+  /* Set the styles for the main element */
+  main {
+    padding: 0.8rem;
+  }
+
+  /* Set the styles for the search results list items */
+  #search-results li {
+    margin-bottom: 0.8rem;
+    padding: 0.8rem;
+  }
+
+  /* Set the styles for the search results list item images */
+  #search-results img {
+    margin-right: 0.8rem;
+  }
+
+  /* Set the styles for the super-flex container */
+  .super-flex {
+    margin-top: 1.5rem;
+  }
+
+  /* Set the styles for the flex container */
+  .flex {
+    flex-basis: 45%;
+    margin-bottom: 1.5rem;
+  }
+}

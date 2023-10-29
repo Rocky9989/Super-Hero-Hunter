@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="ironman.ico">
+    <title>Superhero hunter app</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Superhero Hunter</h1>
+
+      <!-- Search form for searching superheroes -->
+      <form id="search-form">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search for a superhero..."
+        />
+        <button type="submit">Search</button>
+      </form>
+    </header>
+
+    <main>
+      <!-- Unordered list for displaying search results -->
+      <ul id="search-results"></ul>
+
+      <!-- Div for displaying superhero details -->
+      <div id="superhero-details">
+        <h2 id="superhero-name"></h2>
+        <img id="superhero-image" alt="" />
+
+        <!-- Div for displaying superhero details in a flexbox layout -->
+        <div class="super-flex">
+          <div class="flex">
+            <h3>Powerstats</h3>
+            <ul id="powerstats"></ul>
+          </div>
+
+          <div class="flex">
+            <h3>Biography</h3>
+            <ul id="biography"></ul>
+          </div>
+
+          <div class="flex">
+            <h3>Appearance</h3>
+            <ul id="appearance"></ul>
+          </div>
+
+          <div class="flex">
+            <h3>Connections</h3>
+            <ul id="connections"></ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Script file for app functionality -->
+    <script src="script.js"></script>
+  </body>
+</html>
